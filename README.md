@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# PDF RAG Chatbot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**PDF RAG Chatbot** is an AI-powered web application that allows users to upload PDF documents, ask questions about their content, and generate summaries. It leverages AI models to process and analyze the text, providing an interactive and intelligent experience for document exploration.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- **PDF Upload and Processing**: Upload PDF files and extract text seamlessly.
+- **AI-Powered Querying**: Ask questions about the document and get accurate answers using AI.
+- **Document Summarization**: Generate brief, detailed, or bullet-point summaries of the document.
+- **Interactive Chat Interface**: Engage in a chat-like experience to query document content.
+- **AI Model Selection**: Choose from available AI models for customizable responses.
+- **Local Storage**: Save and retrieve chat history for each document.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies Used
 
-### `npm test`
+- **Frontend**: React, HTML, CSS
+- **PDF Processing**: PDF.js
+- **AI Models**: Ollama API for embeddings and natural language processing
+- **State Management**: React Hooks
+- **Utilities**: Local Storage for chat history, custom text processing utilities
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📂 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **`src/components`**: Contains React components like `Header`, `FileUpload`, `ChatInterface`, and more.
+- **`src/services`**: Includes services for PDF processing, embedding generation, and AI interactions.
+- **`src/utils`**: Utility functions for text chunking, language detection, and vector operations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🖥️ How to Run the Project Locally
 
-### `npm run eject`
+### Prerequisites
+- Node.js and npm installed on your system.
+- Ollama API running locally (for AI model interactions).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/viv1212/pdf-rag-chatbot.git
+   cd pdf-rag-chatbot
+2. Install dependencies:
+   ```
+   npm install
+3. Start the development server:
+   ```
+   npm start
+4. Open your browser and navigate to:
+   ```
+   http://localhost:3000
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🤖 AI Models
+The application uses AI models for:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Generating embeddings for semantic search.
+- Answering user queries based on document content.
+- Summarizing the document in various formats.
+### Available Models
+- Default: llama3.2:1b
+- Additional models can be configured via the Ollama API.
 
-## Learn More
+## 📬 Feedback
+Feel free to open an issue or submit a pull request if you have suggestions or improvements. You can also reach out to me on LinkedIn.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🌟 Show Your Support
+If you like this project, please give it a ⭐ on GitHub!
